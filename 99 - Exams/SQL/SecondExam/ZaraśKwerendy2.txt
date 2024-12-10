@@ -1,0 +1,16 @@
+KWERENDA 1
+
+SELECT klienci.Imie, klienci.Nazwisko
+FROM klienci JOIN wypozyczenia USING(Nr_klienta) JOIN samochody USING(Nr_ew)
+WHERE samochody.Miejscowosc = "Aniolkowo"
+INTERSECT
+SELECT klienci.Imie, klienci.Nazwisko
+FROM klienci JOIN wypozyczenia USING(Nr_klienta) JOIN samochody USING(Nr_ew)
+WHERE samochody.Miejscowosc = "Manipulatowo";
+
+
+KWERENDA 2
+
+SELECT klienci.Imie, klienci.Nazwisko
+FROM klienci JOIN wypozyczenia USING(Nr_klienta) JOIN samochody USING(Nr_ew)
+WHERE (wypozyczenia.Wypozyczenie BETWEEN "2015-04%" AND "2015-06%") AND NOT (wypozyczenia.Wypozyczenie BETWEEN "2015-01%" AND "2015-03%");

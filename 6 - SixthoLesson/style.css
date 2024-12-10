@@ -1,0 +1,37 @@
+* {
+    margin: 2px;
+}
+
+body {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.dif {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form {
+    border: 2px solid rgb(83, 39, 240);
+    padding: 0.327rem; 
+}
+
+.label1 {
+    border: 2px solid rgb(83, 39, 240);
+    padding: 5px;
+
+}
+
+input {
+    margin: 0.45rem;
+}

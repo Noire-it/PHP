@@ -1,0 +1,46 @@
+zap1
+
+SELECT DISTINCT
+    (dane.imie)
+FROM
+    dane
+WHERE
+    dane.plec = "k";
+
+
+zap2
+
+SELECT
+    dane.imie,
+    SUM(dane.liczebnosc) AS liczba
+FROM
+    dane
+WHERE
+    dane.plec = "m"
+GROUP BY
+    dane.liczebnosc
+ORDER BY
+    liczba
+DESC
+LIMIT 5;
+
+
+zap3
+
+SELECT
+    dane.imie,
+    SUM(dane.liczebnosc) AS liczba
+FROM
+    dane
+JOIN wojewodztwa ON dane.id_woj = wojewodztwa.id
+WHERE
+    wojewodztwa.nazwa = "MAZOWIECKIE"
+GROUP BY
+    dane.liczebnosc
+ORDER BY
+    liczba
+DESC
+LIMIT 1;
+
+
+zap4

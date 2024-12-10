@@ -1,0 +1,21 @@
+KWERENDA1
+
+SELECT klienci.Imie 
+FROM klienci
+WHERE klienci.Imie NOT LIKE "%a";
+
+
+KWERENDA2
+
+SELECT DISTINCT(samochody.Miejscowosc), COUNT(*) AS liczba
+FROM samochody
+GROUP BY samochody.Miejscowosc
+ORDER BY liczba;
+
+
+KWERENDA3
+
+SELECT DISTINCT(LEFT(samochody.Nr_firmowy,1)) AS klasa, COUNT(*) AS liczba_wyporzyczen
+FROM samochody JOIN wypozyczenia ON samochody.Nr_ew = wypozyczenia.Nr_ew
+GROUP BY wypozyczenia.Nr_ew
+ORDER BY liczba_wyporzyczen DESC;

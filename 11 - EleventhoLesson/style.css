@@ -1,0 +1,10 @@
+body {
+    background-color: #333333;
+    color: white;
+}
+
+.dif {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

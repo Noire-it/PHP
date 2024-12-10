@@ -1,0 +1,22 @@
+.dif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: #333333;
+    color: white;
+}
+
+input[type="submit"] {
+    margin-bottom: 1rem;
+}
+
+table,th,td {
+    border: white 2px solid;
+    border-collapse: collapse;
+    padding: 0.15rem;
+}

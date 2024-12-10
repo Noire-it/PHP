@@ -1,0 +1,33 @@
+/* * {
+    margin: 0;
+} */
+
+body {
+    background-color: #333333;
+    color: white;
+    font-size: 1.03rem;
+}
+
+.dif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0.78rem;
+}
+
+table, tr, th, td {
+    border: 2px solid white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.45rem;
+}
+
+form {
+    padding-top: 0.2342rem;
+}
